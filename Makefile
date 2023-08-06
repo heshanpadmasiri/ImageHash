@@ -14,5 +14,6 @@ $(EXE) : $(OBJS)
 
 clean:
 	rm -f $(OBJS) $(EXE)
+	rm -f *.jpeg
 
 .PHONY: all clean
