@@ -2,6 +2,7 @@
 #include<string.h>
 #include<stdbool.h>
 #include<unistd.h>
+#include "lib.h"
 
 void printHelp(bool isErr) {
     char* prefix = isErr ? "Error: " : "Usage: ";
@@ -15,6 +16,8 @@ int hashImage(char* file_path) {
         return 1;
     }
     printf("file_path: %s\n", file_path);
+    uint64_t hash = imageHash(file_path);
+    printf("hash: %llu\n", hash);
     return 0;
 }
 

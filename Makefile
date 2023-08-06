@@ -1,6 +1,6 @@
 CC = clang
 CFLAGS = -Wall -Wextra
-SRCS = main.c
+SRCS = main.c lib.c
 OBJS = $(SRCS:.c=.o)
 EXE = imhash
 
